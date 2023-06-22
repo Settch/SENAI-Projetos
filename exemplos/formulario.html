@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/estilo-form.css">
+</head>
+<body>
+    <h1 class="titulo1">Exemplo Formulário</h1>
+
+    <form action="pagina.php" method="get" class="formulario">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="name" placeholder="Digite seu nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu Email">
+            
+            <label for="filhos">Número de Filhos:</label>
+            <input type="number" id="filhos" name="filhos" min="0" max="10">
+            
+            <label for="data">Data de Inscrição:</label>
+            <input type="date" id="data" min="2023-05-01" max="2023-05-13">
+
+            <p>Gênero:</p>
+            <div class="genero">
+            <label for="masc">Masculino:</label>
+            <input type="radio" id="masc" name="genero" value="M">
+
+            <label for="fem">Feminino:</label>
+            <input type="radio" id="fem" name="genero" value="F">
+
+            <label for="outros">Outros:</label>
+            <input type="radio" id="outros" name="genero" value="x">
+            </div>
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="0" name="estado">Selecione um Estado</option>
+                <option value="sp" name="estado">São Paulo</option>
+                <option value="ce" name="estado">Ceará</option>
+                <option value="rj" name="estado">Rio de Janeiro</option>
+                <option value="ba" name="estado">Bahia</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <div class="interesse">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="html" name="html">
+
+            <label for="css">CSS</label>
+            <input type="checkbox" id="css" name="css">
+
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" id="javascript" name="javascript">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagens e sugestões:</legend>
+            
+            <label for="msg">Deixe aqui sua mensagem</label>
+            <textarea name="mesage" id="msg" cols="30" rows="10"></textarea>
+            
+            <label for="termo">Termo de Adesão:</label>
+            <textarea id="termo" cols="20" rows="10" readonly>Texto com termo de adesão que deve ser aceito</textarea>
+            <div class="termos">
+            <label for="aceito">Li e aceito os termos:</label>
+            <input type="checkbox" id="aceito" name="aceito" required>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar formulário" class="btn">
+        <input type="reset" value="Limpar Formulário"class="btn"> 
+    </form>
+</body>
+</html>

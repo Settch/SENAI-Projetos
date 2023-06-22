@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - DOM</title>
+    <style>
+        .retangulo{
+            width: 400px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: red;
+        }
+        .btn{
+            margin-top: 16px;
+            padding: 8px;
+            background-color: salmon;
+        }
+        .btn:active{
+            background-color: olivedrab;
+        }
+        .muda-cor{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="texto1">Texto original</h1>
+
+    <hr>
+
+    <p class="paragrafo">Primeiro parágrafo</p>
+    <p class="paragrafo">Segundo parágrafo</p>
+    <p class="paragrafo">Terceiro parágrafo</p>
+
+    <hr>
+
+    <div class="retangulo"></div>
+    <button class="btn">Muda Classe</button>
+    
+    <hr>
+
+    <ul class="lista"></ul>
+    <input type="text" id="input-texto">
+    <button class="btn" id="btn-adiciona">Adicionar linha</button>
+
+    <hr>
+
+    <ul>
+        <li class="linha-apagar">Linha 1</li>
+        <li class="linha-apagar">Linha 2</li>
+        <li class="linha-apagar">Linha 3</li>
+        <li class="linha-apagar">Linha 4</li>
+        <li class="linha-apagar">Linha 5</li>
+        <li class="linha-apagar">Linha 6</li>
+    </ul>
+
+    <hr>
+
+    <ul class="filtraLista">
+        <li class="filtraLinha">JavaScript</li>
+        <li class="filtraLinha">HTML</li>
+        <li class="filtraLinha">Java</li>
+        <li class="filtraLinha">PHP</li>
+        <li class="filtraLinha">Figma</li>
+        <li class="filtraLinha">Youtube</li>
+        <li class="filtraLinha">Cursos</li>
+        <li class="filtraLinha">Dinheiro</li>
+        <li class="filtraLinha">Pix</li>
+        <li class="filtraLinha">Juventude</li>
+    </ul>
+
+    <input type="text" id="inputFiltra">
+
+    <hr>
+
+    <script src="mudaTexto.js"></script>
+    <script src="mudaCSS.js"></script>
+    <script src="mudaClasse.js"></script>
+    <script src="adicionaLinha.js"></script>
+    <script src="apagaLinha.js"></script>
+    <script src="filtraLista.js"></script>
+
+
+</body>
+</html>

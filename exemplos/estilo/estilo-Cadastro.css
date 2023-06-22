@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.formulario{
+    margin: auto;
+    max-width: 600px;
+}
+.formulario label{
+    text-transform: uppercase;
+    display: block;
+    padding: 15px;
+}
+.title1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+.fid input{
+    border-radius: 20px;
+    border-color: black;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.flex-con{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-con div input{
+    border-radius: 20px;
+    border-color: black;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.bai input{
+    border-radius: 20px;
+    border-color: black;
+    margin-bottom: 30px;
+    width: 100%;
+    padding: 10px;
+}
+.lol{
+    display: flex;
+    justify-content: space-between;
+}
+.lol input, select{
+    border-radius: 20px;
+    border-color: black;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.oxes{
+    width: 49%;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+}
+.btn:hover{
+    color: orange;
+    background-color: black;
+    transition: 0.5s;
+}
+.rodape{
+    padding: 30px;
+    border-top: 3px solid black;
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+}

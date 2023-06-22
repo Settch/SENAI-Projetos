@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+:root{
+    --pretoClaro:#191919;
+    --vermelhoMassa:#CD1818;
+    --cinzaLindo:#9BA4B5;
+    --vermeio:#FF0303;
+    --laranja:#FD841F;
+}
+.cabecalho{
+    background-color: var(--pretoClaro);
+    border-bottom: 2px solid var(--vermeio);
+    padding: 15px;
+}
+.centraliza{
+    max-width: 1200px;
+    margin: auto;
+}
+.cabecalho .centraliza{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho img{
+    width: 100px;
+}
+.cabecalho ul{
+    list-style: none;
+}
+.cabecalho li{
+    display: inline;
+}
+.cabecalho a{
+    text-decoration: none;
+    color: var(--vermelhoMassa);
+    padding: 15px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.cabecalho a:hover{
+    color: #FD841F;
+    transition: 0.5s;
+}
+.cabecalho i{
+    font-size: 24px;
+}
+.img-fundo{
+    height: 80vh;
+    background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url(../imagens/monstrao.jpg);
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+}
+.centraliza .img-fundo{
+    height: 500p;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-fundo h1{
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--laranja);
+}
+
+.img-fundo p{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--laranja);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .cabecalho .centraliza{
+        flex-direction: column;
+    }
+
+    .cabecalho img{
+        margin-bottom:15px ;
+    }
+
+    .cabecalho ul{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .cabecalho nav{
+        text-align: center;
+    }
+
+    .cabecalho li{
+        display: block;
+    }
+
+    .cabecalho li:last-child{
+        margin-bottom: ;
+    }
+}

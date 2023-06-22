@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/estilo-Cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <h1 class="title1">Cadastro</h1>
+    </header>
+    <form action="pagina.php" method="get" class="formulario">
+        <h3 class="title3">Endereço</h3>
+        <div class="fid">
+            <label for="CEP">CEP:</label>
+            <input type="text" id="CEP" name="CEP" placeholder="Digite o CEP da sua rua">
+        </div>
+
+        <div class="fid">
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="Endereço" name="endereco" placeholder="Digite o seu Endereço">
+        </div>
+
+        <div class="flex-con">
+            <div>
+                <label for="Número">Número:</label>
+                <input type="text" id="Número" name="numero" placeholder="Digite o Número"> 
+            </div>
+
+            <div>
+                <label for="Complemento">Complemento:</label>
+                <input type="text" id="Complemento" name="complemento" placeholder="Digite um Complemento"> 
+            </div>
+        </div>
+
+        <div class="bai">
+            <label for="Bairro">Bairro:</label>
+            <input type="text" id="Bairro" name="Bairro" placeholder="Digite o seu Bairro"> 
+        </div>
+
+        <div class="lol">
+            <div class="oxes">
+            <label for="Cidade">Cidade:</label>
+            <input type="text" id="Cidade" name="cidade" placeholder="Digite uma Cidade">
+            </div>
+
+            <div class="oxes">
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="0" name="estado">Selecione um Estado</option>
+                <option value="CE" name="estado">Ceará</option>
+                <option value="PI" name="estado">Piauí</option>
+                <option value="MA" name="estado">Maranhão</option>
+                <option value="PA" name="estado">Paraíba</option>
+            </select>
+            </div>
+        </div>
+
+        <div>
+            <input type="submit" value="Cadastrar-se" class="btn">
+        </div>
+    </form>
+
+    <footer class="rodape">
+        <span>CopyRight © Sala 15</span>
+    </footer>
+</body>
+</html>

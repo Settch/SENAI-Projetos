@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: ;
+    font-family: Architects Daughter;
+}
+.cabecalho{
+    background-color: #E0144C;
+    padding: 8px;
+}
+.centraliza{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+#logo-topo{
+    width: 80px;
+}
+.navegacacao ul{
+    list-style: none;
+}
+.navegacacao ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.navegacacao ul li a{
+    color:#5D9C59;
+    text-decoration: none;
+}
+.navegacacao ul li a i{
+    font-size: 23px;
+}
+.navegacacao ul li a:hover{
+    color:#F7D060;
+    transition: .5s;
+}
+.imagem-fundo{
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../imagens/maca-do-amor.jpg);
+    height: 740px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+.centraliza-vertical{
+    max-width: 1200px;
+    margin: auto;
+    align-items:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center
+}
+.titulo2{
+    color: #DC0000;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.imagem-fundo p{
+    font-size: 20px;
+    color:#DC0000;
+    line-height: 1,8;
+    text-align: center;
+}
+.btn{
+    margin-top: 32px;
+    background-color: #DC0000;
+    color:#FFDB89;
+    padding:16px;
+    border: none;
+    border-radius: 36px;
+    box-shadow: 3px 3px #000000;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #FFDB89;
+    color: #DC0000;
+    transition: 0.5s;
+    box-shadow: 1px 1px 1px #000000;
+    transition: 0.5s;
+}
+.secao-sobre{
+    background-color: antiquewhite;
+    padding:80px 0;
+}
+.secao-sobre .centraliza{
+    background-color: beige;
+}
+.texto-sobre, .imagem-sobre{
+    width:50%;
+}
+.titulo3{
+    font-size: 32px;
+    color:#E0144C;
+    margin-bottom: 20px;
+}
+
+.imagem-sobre img{
+    width:350px;
+}
